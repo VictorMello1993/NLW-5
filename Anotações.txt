@@ -1,0 +1,9 @@
+{
+  "type": "sqlite", //driver do banco de dados (SQLite, Oracle, Postgree, MySQL, etc)
+  "database": "./src/database/database.sqlite", //Caminho em que será criado o arquivo do SQLite
+  "migrations": ["./src/database/migrations/**.ts"], //Caminho onde será executada o arquivo da migration
+  "entities": ["./src/entities/**.ts"], //Caminho das entidades
+  "cli": {
+    "migrationsDir": "./src/database/migrations" //Caminho do diretório onde será gerada uma migration
+  }
+}
