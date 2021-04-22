@@ -6,7 +6,7 @@
   "author": "Victor Mello <victorsmello93@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts",
+    "dev": "ts-node-dev src/server.ts --inspect .",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
   },
   "dependencies": {
