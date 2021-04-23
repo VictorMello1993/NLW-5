@@ -13,12 +13,11 @@ io.on("connect", (socket) => {
   const usersService = new UsersService();
   const messagesService = new MessagesService();
 
-  let user_id = null;
-
   //Primeiro acesso do usuário ao chat
   socket.on("client_first_access", async (params) => {
     const socket_id = socket.id;
     const { text, email } = params as IParams; //Casting para o tipo interface IParams
+    let user_id = null;
 
     const userBase = await usersService.findByEmail(email);
 
