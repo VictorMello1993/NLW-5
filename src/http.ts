@@ -17,8 +17,14 @@ app.set("views", pastaView);
 app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
 
+//Chat do cliente
 app.get("/pages/client", (req, res) => {
   return res.render("html/client.html");
+});
+
+//Chat do admin (atendente)
+app.get("/pages/admin", (req, res) => {
+  return res.render("html/admin.html");
 });
 
 const http = createServer(app); //Criando um servidor do protocolo HTTP
