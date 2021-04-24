@@ -39,8 +39,10 @@ class SettingsService {
   async update(username: string, chat: boolean) {
     await this.settingsRepository
       .createQueryBuilder()
-      .update(Setting)
-      .set({ chat })
+      .update(Setting) //Passa para entidade
+      .set({ chat }) //Atualiza o chat com novo texto
+
+      //Filtra pelo do usuário vindo da requisição. O mesmo deve ser 'admin'
       .where("username = :username", {
         username,
       })

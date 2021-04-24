@@ -7,3 +7,9 @@
     "migrationsDir": "./src/database/migrations" //Caminho do diretório onde será gerada uma migration
   }
 }
+
+
+
+//yarn typeorm migration:create -n NomeMigration => cria uma migration
+//yarn typeorm migration:run => executa as configurações da migration que estiverem no método up()
+//yarn typeorm migration:revert => executa as configurações da migration que estiverem no método down()
