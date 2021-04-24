@@ -1,6 +1,7 @@
 import { getCustomRepository, Repository } from "typeorm";
 import { Connection } from "../entities/Connection";
 import { ConnectionsRepository } from "../repositories/ConnectionsRepository";
+import { UsersService } from "./UsersService";
 
 interface IConnectionCreate {
   socket_id: string;
