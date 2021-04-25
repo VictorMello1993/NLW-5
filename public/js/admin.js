@@ -33,6 +33,8 @@ function call(id) {
     user_id: connection.user.id
   }
 
+  socket.emit('admin_user_in_support', params);
+
   //Populando o histórico de mensagens por usuário que se conectou com admin na tela /pages/admin
   socket.emit('admin_list_messages_by_user', params, messages => {
     const divMessages = document.getElementById(`allMessages${connection.user_id}`)
@@ -67,7 +69,7 @@ function sendMessage(id) {
     text: text.value
   }
 
-  //Criando evento de envio de mensagem pelo admin para o usuário específico
+  //Criando evento de envio de mensagem do admin para o usuário específico
   socket.emit('admin_send_message', params)
 
   const divMessages = document.getElementById(`allMessages${id}`)
@@ -82,3 +84,19 @@ function sendMessage(id) {
 
   text.value = '' //Limpando o campo de texto após envio
 }
+
+//Evento de envio da mensagem de resposta do usuário ao admin
+socket.on('admin_receive_message', data => {
+  console.log(data)
+  const connection = connectionsUsers.find(connetion => connetion.socket_id === data.socket_id)
+
+  const divMessages = document.getElementById(`allMessages${connection.user_id}`)
+  const createDiv = document.createElement('div');
+
+  createDiv.className = 'admin_message_client'
+  createDiv.innerHTML = `<span>${connection.user.email}</span>`
+  createDiv.innerHTML += `<span>${data.message.text}</span>`
+  createDiv.innerHTML += `<span class="admin_date">${dayjs(data.message.created_at).format('DD/MM/YYYY HH:mm:ss')}</span>`
+
+  divMessages.appendChild(createDiv)
+})

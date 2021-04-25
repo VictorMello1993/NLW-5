@@ -15,7 +15,7 @@ io.on("connect", async (socket) => {
    conectado.*/
   io.emit("admin_list_all_users", allConnectionWithoutAdmin);
 
-  //Trazendo o histórico de mensagens por usuário que se conectou com admin
+  //Listener do evento de listagem das mensagens por usuário que se conectou com admin
   socket.on("admin_list_messages_by_user", async (params, callback) => {
     const { user_id } = params;
 
@@ -38,5 +38,17 @@ io.on("connect", async (socket) => {
       text,
       socket_id: socket.id,
     });
+  });
+
+  /*Atualizando a lista de usuários que estão em atendimento. 
+  Se clicar no botão de entrar em atendimento para um determinado usuário, o outro deve sair da fila*/
+  socket.on("admin_user_in_support", async (params) => {
+    const { user_id } = params;
+
+    await connectionsService.updateAdminID(user_id, socket.id);
+
+    const allConnectionWithoutAdmin = await connectionsService.findAllWithoutAdmin();
+
+    io.emit("admin_list_all_users", allConnectionWithoutAdmin);
   });
 });

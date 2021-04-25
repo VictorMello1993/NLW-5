@@ -55,5 +55,26 @@ io.on("connect", (socket) => {
     //Listando todas as mensagens do usuário
     const allMessages = await messagesService.listByUser(user_id);
     socket.emit("client_list_all_messages", allMessages);
+
+    //Listando todas as mensagens do novo usuário que acabou de se conectar com o chat, e o admin deve saber que esse usuário já está no novo atendimento
+    const allUsers = await connectionsService.findAllWithoutAdmin();
+    io.emit("admin_list_all_users", allUsers);
+  });
+
+  //Evento de click do botão de enviar a mensagem de reposta ao admnistrador, criado no chat.js
+  socket.on("client_send_to_admin", async (params) => {
+    const { text, socket_admin_id } = params;
+    const socket_id = socket.id;
+
+    const { user_id } = await connectionsService.findBySocketId(socket_id);
+
+    //Salvando a mensagem no banco de dados
+    const message = await messagesService.create({ text, user_id });
+
+    //Envio efetivo da mensagem de resposta do usuário ao admin
+    io.to(socket_admin_id).emit("admin_receive_message", {
+      message,
+      socket_id,
+    });
   });
 });

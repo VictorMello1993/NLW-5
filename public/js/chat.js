@@ -1,7 +1,9 @@
 let socket_admin_id = null;
+let emailUser = null;
+let socket = null;
 
 document.querySelector("#start_chat").addEventListener("click", (event) => {
-  const socket = io();
+  socket = io();
 
   const chat_help = document.getElementById("chat_help")
   chat_help.style.display = "none"
@@ -10,6 +12,8 @@ document.querySelector("#start_chat").addEventListener("click", (event) => {
   chat_in_support.style.display = "block"
 
   const email = document.getElementById("email").value
+  emailUser = email
+
   const text = document.getElementById("txt_help").value
   const params = {
     email,
@@ -55,7 +59,7 @@ document.querySelector("#start_chat").addEventListener("click", (event) => {
   socket.on("admin_send_to_client", message => {
     socket_admin_id = message.socket_id
 
-    const template_admin = document.getElementById('admin_template').innerHTML
+    const template_admin = document.getElementById('admin-template').innerHTML
     const rendered = Mustache.render(template_admin, {
       message_admin: message.text
     })
@@ -63,3 +67,21 @@ document.querySelector("#start_chat").addEventListener("click", (event) => {
     document.getElementById('messages').innerHTML += rendered
   })
 });
+
+//Envio da mensagem de resposta do usuário ao admin 
+document.querySelector('#send_message_button').addEventListener('click', (event) => {
+  const text = document.getElementById('message_user')
+
+  const params = {
+    text: text.value,
+    socket_admin_id
+  }
+
+  socket.emit('client_send_to_admin', params)
+
+  const templateClient = document.getElementById('message-user-template').innerHTML
+
+  const rendered = Mustache.render(templateClient, { message: text.value, email: emailUser })
+
+  document.getElementById('messages').innerHTML += rendered
+})

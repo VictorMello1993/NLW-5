@@ -1,7 +1,6 @@
 import { getCustomRepository, Repository } from "typeorm";
 import { Connection } from "../entities/Connection";
 import { ConnectionsRepository } from "../repositories/ConnectionsRepository";
-import { UsersService } from "./UsersService";
 
 interface IConnectionCreate {
   socket_id: string;
@@ -41,6 +40,24 @@ class ConnectionsService {
       relations: ["user"], //Pegando as informações da tabela de relacionamento (no caso, na tabela de usuários)
     });
     return connections;
+  }
+
+  async findBySocketId(socket_id: string) {
+    const connection = await this.connectionsRepository.findOne({ socket_id });
+    return connection;
+  }
+
+  async updateAdminID(user_id: string, admin_id: string) {
+    await this.connectionsRepository
+      .createQueryBuilder()
+      .update(Connection) //Passa para entidade Connection
+      .set({ admin_id }) //Atualiza o admin_id, que é atrelado ao socket_id
+
+      //Filtra pelo do usuário vindo da requisição. O mesmo deve ser 'admin'
+      .where("user_id = :user_id", {
+        user_id,
+      })
+      .execute();
   }
 }
 
