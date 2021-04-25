@@ -47,6 +47,7 @@ io.on("connect", async (socket) => {
 
     await connectionsService.updateAdminID(user_id, socket.id);
 
+    //Listando as conexões que não existem com administrador conectado, ou seja quando usuário entra na fila de atendimentos na página do admin que ainda não mandou para o usuário
     const allConnectionWithoutAdmin = await connectionsService.findAllWithoutAdmin();
 
     io.emit("admin_list_all_users", allConnectionWithoutAdmin);

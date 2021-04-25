@@ -78,7 +78,7 @@
 
         <div class="first_email">
           <span>Seu e-mail</span>
-          <input type="text" name="" id="email" />
+          <input type="text" name="email" id="email" required />
         </div>
 
         <div class="button">
@@ -98,6 +98,7 @@
   <script>
     onLoad();
     const chat = document.getElementById("chat_help");
+    const chatSupport = document.getElementById("chat_in_support");
 
     function onLoad() {
       fetch("http://localhost:3000/settings/admin").then((result) =>
@@ -111,11 +112,14 @@
     }
 
     function openChat() {
-      chat.style.display = "block";
+      if (chat.style.display === "" || chat.style.display === "none") {
+        chat.style.display = "block";
+      }
     }
 
     function closeChat() {
       chat.style.display = "none";
+      chatSupport.style.display = "none";
     }
 
     function keyUpTextHelp(event) {

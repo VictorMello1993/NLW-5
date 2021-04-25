@@ -88,13 +88,13 @@ function sendMessage(id) {
 //Evento de envio da mensagem de resposta do usuário ao admin
 socket.on('admin_receive_message', data => {
   console.log(data)
-  const connection = connectionsUsers.find(connetion => connetion.socket_id === data.socket_id)
+  const connection = connectionsUsers.find(connection => connection.socket_id === data.socket_id)
 
-  const divMessages = document.getElementById(`allMessages${connection.user_id}`)
+  const divMessages = document.getElementById(`allMessages${data.message.user_id}`)
   const createDiv = document.createElement('div');
 
   createDiv.className = 'admin_message_client'
-  createDiv.innerHTML = `<span>${connection.user.email}</span>`
+  createDiv.innerHTML = `<span>${data.email}</span>`
   createDiv.innerHTML += `<span>${data.message.text}</span>`
   createDiv.innerHTML += `<span class="admin_date">${dayjs(data.message.created_at).format('DD/MM/YYYY HH:mm:ss')}</span>`
 
