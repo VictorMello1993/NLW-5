@@ -17,8 +17,8 @@
 <p align="center">
   <a href="#clapper-demo">Demo</a> •
   <a href="#earth_americas-overview">Overview</a> •
-  <a href="#books-o-que-é-websocket">What is WebSocket?</a> •  
-  <a href="#wrench-recursos">Features</a> •
+  <a href="#books-what-is-websocket">What is WebSocket?</a> •  
+  <a href="#wrench-features">Features</a> •
   <a href="#triangular_flag_on_postcomeçando">Getting started</a> •  
   <a href="#melhorias">Improvements</a>    
 </p>
