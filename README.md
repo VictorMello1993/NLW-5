@@ -1,6 +1,7 @@
 # NLW (Next Level Week) 5ª edição
 
-![1 - NLW #05 - 1920x1080](https://user-images.githubusercontent.com/35710766/116016432-f978d580-a612-11eb-833c-b5ed80a7c9ef.jpg)
+
+<img src="https://user-images.githubusercontent.com/35710766/116016432-f978d580-a612-11eb-833c-b5ed80a7c9ef.jpg" alt="Papel de parede da NLW" align="center"/>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VictorMello1993/NLW-5?color=FF0000">
@@ -44,3 +45,39 @@
 
 <h2>:books: O que é WebSocket?</h2>
 <p>É o protocolo de comunicação de dados que permite uma comunicação entre duas ou mais entidades, bidirecional, e em tempo real. É o mais indicado para aplicações que demandam alta performance, com menor tempo de resposta possível. É uma alternativa ao uso do simples protocolo HTTP, que por mais que seja utilizado na maioria das aplicações, não é indicado em aplicações in real time, pelo fato da comunicação ser síncrona, onde o cliente necesariamente deve aguardar a resposta da requisição por parte do servidor, o que torna a aplicação bastante custosa, com menos performance. Em aplicações de mensagens instantâneas como Whatsapp, Discord, Microsoft Teams, a comunicação é assíncrona, ou seja, o cliente não necessariamente precisa aguardar a resposta do servidor para continuar enviando mensagens. Ele pode até mesmo enviar várias mensagens sem mesmo ter recebido nenhuma resposta do servidor ou do outro cliente.</p>
+
+---
+
+<h2>:wrench: Recursos</h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>Node.js</li>
+  <li>SQLite</li>
+  <li>EJS (Template Engine do HTML)</li>
+  <li>Typescript</li>
+  <li>socket.io (Biblioteca js para conexão do WebSocket)</li>
+  <li>Express.js (Microframework para gerenciamento de rotas usando protocolo HTTP</li>
+</ul>
+
+<h2>:triangular_flag_on_post:Começando</h2>
+
+1 - Clone o repositório
+```
+git clone https://github.com/VictorMello1993/NLW-5.git
+```
+
+2 - Abra o VS Code abra a pasta "NLW-5" que é a pasta raíz do projeto
+
+3 - No terminal do VS Code, digite ```npm i ``` para instalar todas as dependências ao projeto
+
+4 - Executar o script ```npm run dev``` para iniciar o servidor. Caso tenha yarn instalado, poderá executar digitando ```yarn dev```. Caso ocorra algum erro, provavelmente é a porta já ocupada por outra aplicação. Então, mude de porta na linha ```http.listen(3000, () => console.log("Loading..."));``` no ```server.ts```, trocando 3000 para qualquer outro número, e execute novamente o comando
+
+5 - Se estiver funcionando na porta 3000, na barra de endereços do seu navegador, escreva `localhost:3000/pages/client` para abrir a página de usuário e  `localhost:3000/pages/admin` para abrir a página de administador (ou atendente)
+
+6 - Para aparecer as conexões do usuário na página do administrador, é preciso mandar a primeira mensagem clicando no botão ```Suporte```, preencher o e-mail e escrever o texto. Depois disso, clicando no botão ```Iniciar chat``` irá aparecer a lista de usuários na fila para ser atendido, conforme as imagens abaixo:
+
+<img src="https://user-images.githubusercontent.com/35710766/116019748-46f94080-a61b-11eb-8307-324e2b808ac0.png" alt="Imagem de chat do cliente" align="center"/>
+<i align="center"> Primeira mensagem do usuário que será atendido pelo administrador</i>
+
