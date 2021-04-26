@@ -1,7 +1,7 @@
 # NLW (Next Level Week) 5ª edição
 
 
-<img src="https://user-images.githubusercontent.com/35710766/116016432-f978d580-a612-11eb-833c-b5ed80a7c9ef.jpg" alt="Papel de parede da NLW" align="center"/>
+<img src="https://user-images.githubusercontent.com/35710766/116016432-f978d580-a612-11eb-833c-b5ed80a7c9ef.jpg" alt="Papel de parede da NLW"/>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VictorMello1993/NLW-5?color=FF0000">
@@ -81,24 +81,24 @@ git clone https://github.com/VictorMello1993/NLW-5.git
 
 6 - Para aparecer as conexões do usuário na página do administrador, é preciso mandar a primeira mensagem clicando no botão ```Suporte```, preencher o e-mail e escrever o texto. Depois disso, clicando no botão ```Iniciar chat``` irá aparecer a lista de usuários na fila para ser atendido, conforme as imagens abaixo:
 
-<img src="https://user-images.githubusercontent.com/35710766/116019748-46f94080-a61b-11eb-8307-324e2b808ac0.png" alt="Imagem de chat do cliente" align="center"/>
-<i align="center"> Primeira mensagem do usuário que será atendido pelo administrador</i>
+<img src="https://user-images.githubusercontent.com/35710766/116019748-46f94080-a61b-11eb-8307-324e2b808ac0.png" alt="Imagem de chat do cliente"/>
+<span align="center"><i>Primeira mensagem do usuário que será atendido pelo administrador</i></span>
 
 </br>
 </br>
 </br>
 </br>
 
-<img src="https://user-images.githubusercontent.com/35710766/116020487-bb80af00-a61c-11eb-9475-684cd37f6012.png" align="center" alt="Lista de usuários na fila de atendimento"/>
-<i align="center"> Lista de usuários na fila de atendimento</i>
+<img src="https://user-images.githubusercontent.com/35710766/116020487-bb80af00-a61c-11eb-9475-684cd37f6012.png" alt="Lista de usuários na fila de atendimento"/>
+<span align="center"><i>Lista de usuários na fila de atendimento</i></span>
 
 </br>
 </br>
 </br>
 </br>
 
-<img src="https://user-images.githubusercontent.com/35710766/116020571-f387f200-a61c-11eb-9380-f569f655977b.png" alt="Janela de chat do administrador com usuário selecionado na fila" align="center"/>
-<i align="center"> Janela de chat do administrador com usuário já conectado</i>
+<img src="https://user-images.githubusercontent.com/35710766/116020571-f387f200-a61c-11eb-9380-f569f655977b.png" alt="Janela de chat do administrador com usuário selecionado na fila"/>
+<span align="center"><i>Janela de chat do administrador com usuário já conectado</i></span>
 
 </br>
 </br>
