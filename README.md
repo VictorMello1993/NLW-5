@@ -78,6 +78,9 @@ git clone https://github.com/VictorMello1993/NLW-5.git
 
 6 - Para aparecer as conexões do usuário na página do administrador, é preciso mandar a primeira mensagem clicando no botão ```Suporte```, preencher o e-mail e escrever o texto. Depois disso, clicando no botão ```Iniciar chat``` irá aparecer a lista de usuários na fila para ser atendido, conforme as imagens abaixo:
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/35710766/116019748-46f94080-a61b-11eb-8307-324e2b808ac0.png" alt="Imagem de chat do cliente" align="center"/>
+</p>
 <i align="center"> Primeira mensagem do usuário que será atendido pelo administrador</i>
+
 
