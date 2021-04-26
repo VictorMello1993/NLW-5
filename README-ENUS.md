@@ -19,8 +19,8 @@
   <a href="#earth_americas-overview">Overview</a> •
   <a href="#books-what-is-websocket">What is WebSocket?</a> •  
   <a href="#wrench-features">Features</a> •
-  <a href="#triangular_flag_on_postcomeçando">Getting started</a> •  
-  <a href="#melhorias">Improvements</a>    
+  <a href="#triangular_flag_on_postgetting-started">Getting started</a> •  
+  <a href="#improvements">Improvements</a>    
 </p>
 
 ---
