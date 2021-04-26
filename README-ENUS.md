@@ -60,7 +60,7 @@
   <li>EJS (HTML Template Engine)</li>
   <li>Typescript</li>
   <li>socket.io (Js lib to WebSocket connections)</li>
-  <li>Express.js (Microframework to routes management using HTTP protocolo</li>
+  <li>Express.js (Microframework to routes management using HTTP protocol)</li>
 </ul>
 
 ---
