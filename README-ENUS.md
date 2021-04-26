@@ -67,3 +67,48 @@
 
 
 <h2>:triangular_flag_on_post:Getting started</h2>
+
+1- Clone the repository
+```git clone https://github.com/VictorMello1993/NLW-5.git```
+
+2- Open VS Code and open the folder ```NLW5``` as a root folder
+
+3- In the VS Code terminal, type ```npm i``` to install all of the dependencies to the projet
+
+4- Execute ```npm run dev``` to start the server. If you've already had yarn installed, just type ```yarn dev```. In case of errors, problably is a port already busy by the other application. Then, change the port on line ```http.listen(3000, () => console.log("Loading..."));``` on ```server.ts```, changing 3000 to another number, and run the command again.
+
+5- Otherwise, from the address bar in your browser, type ```localhost:3000/pages/client``` to open the user's page and ```localhost:3000/pages/admin``` to open the admin's page (or attendant)
+
+6- To the user's connections be shown on the admin's page, is need to to send the first message clicking on ```Suporte``` button, fill e-mail and write some text. After that, clicking on ```Iniciar chat``` button will show the users in support list to be served, as shown in the images below:
+
+<img src="https://user-images.githubusercontent.com/35710766/116019748-46f94080-a61b-11eb-8307-324e2b808ac0.png" alt="Client chat image"/>
+<i>First user's message before to be served by attendant</i>
+
+</br>
+</br>
+</br>
+</br>
+
+<img src="https://user-images.githubusercontent.com/35710766/116020487-bb80af00-a61c-11eb-9475-684cd37f6012.png" alt="Users in support queue"/>
+<i>Users in support queue</i>
+
+</br>
+</br>
+</br>
+</br>
+
+<img src="https://user-images.githubusercontent.com/35710766/116020571-f387f200-a61c-11eb-9380-f569f655977b.png" alt="Janela de chat do administrador com usuário selecionado na fila"/>
+<i>Attendant's chat window with user already connected</i>
+
+</br>
+</br>
+
+---
+
+
+## Improvements
+- [ ] Add authentication and authorization for user's client and admin (attendant) with JWT
+
+## Versões do README
+<img src="https://user-images.githubusercontent.com/35710766/116021063-d273d100-a61d-11eb-8078-332213bc2d03.png" alt="United States flag" width="22px"/> <a href="/README-ENUS.md">English</a> | <img src="https://user-images.githubusercontent.com/35710766/116020959-a8221380-a61d-11eb-9c40-5af85e373ec3.jpg" alt="Brazil flag" width="22px"/> <a href="/README.md">Portuguese</a>
+
