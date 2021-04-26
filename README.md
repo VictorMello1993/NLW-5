@@ -70,7 +70,7 @@ git clone https://github.com/VictorMello1993/NLW-5.git
 
 2 - Abra o VS Code abra a pasta "NLW-5" que é a pasta raíz do projeto
 
-3 - No terminal do VS Code, digite ```npm i ``` para instalar todas as dependências ao projeto
+3 - No terminal do VS Code, digite ```npm i``` para instalar todas as dependências ao projeto
 
 4 - Executar o script ```npm run dev``` para iniciar o servidor. Caso tenha yarn instalado, poderá executar digitando ```yarn dev```. Caso ocorra algum erro, provavelmente é a porta já ocupada por outra aplicação. Então, mude de porta na linha ```http.listen(3000, () => console.log("Loading..."));``` no ```server.ts```, trocando 3000 para qualquer outro número, e execute novamente o comando
 
