@@ -78,9 +78,24 @@ git clone https://github.com/VictorMello1993/NLW-5.git
 
 6 - Para aparecer as conexões do usuário na página do administrador, é preciso mandar a primeira mensagem clicando no botão ```Suporte```, preencher o e-mail e escrever o texto. Depois disso, clicando no botão ```Iniciar chat``` irá aparecer a lista de usuários na fila para ser atendido, conforme as imagens abaixo:
 
-<p align="center">
 <img src="https://user-images.githubusercontent.com/35710766/116019748-46f94080-a61b-11eb-8307-324e2b808ac0.png" alt="Imagem de chat do cliente" align="center"/>
-</p>
 <i align="center"> Primeira mensagem do usuário que será atendido pelo administrador</i>
 
+</br>
 
+<img src="https://user-images.githubusercontent.com/35710766/116020487-bb80af00-a61c-11eb-9475-684cd37f6012.png" align="center" alt="Lista de usuários na fila de atendimento"/>
+<i align="center"> Lista de usuários na fila de atendimento</i>
+
+</br>
+
+<img src="https://user-images.githubusercontent.com/35710766/116020571-f387f200-a61c-11eb-9380-f569f655977b.png" alt="Janela de chat do administrador com usuário selecionado na fila" align="center"/>
+<i align="center"> Janela de chat do administrador com usuário já conectado</i>
+
+</br>
+
+---
+## Melhorias
+- [ ] Incluir autenticação e autorização para perfis de usuário de cliente e usuário administrador com JWT
+
+## Versões do README
+<img src="https://user-images.githubusercontent.com/35710766/116021063-d273d100-a61d-11eb-8078-332213bc2d03.png" alt="Bandeira dos Estados Unidos" width="22px"/> <a href="/README-ENUS.md">Inglês</a> | <img src="https://user-images.githubusercontent.com/35710766/116020959-a8221380-a61d-11eb-9c40-5af85e373ec3.jpg" alt="Bandeira do Brasil" width="22px"/> <a href="/README.md">Português</a>
