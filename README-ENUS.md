@@ -46,7 +46,7 @@
 <p>App built to enhance back-end skills with Node.js taught at NLW (Next Level Week) season 5, promoted by <a href="https://rocketseat.com.br/">Rocketseat</a>. It's about a simple chat, but involves muti users in the same application. The project aims to study WebSocket protocol.</p>
 
 <h2>:books: What is WebSocket?</h2>
-<p>Is a data communication protocol that allows communication between two or more entities, bidirectional, and in real time. It's the most indicated to applications that demands high performance, with the shortest response time possible. It's an alternative to use of the simple HTTP protocol, that however much it is used in most applications, it is not indicated to real time applications, because the communication is synchronous, where the client must necessarily wait a response by the server, which makes the application quite costly, with less performance. In instant messaging applications like Whatsapp, Discord, Microsoft Team, among others, the communication is asynchronous, where the client does not necessarily need to wait the server response to keep sending messages. He can even send multiple messages without even receiving any response from the server or the other client. </p>
+<p>Is a data communication protocol that allows communication between two or more entities, bidirectional, and in real time. It's the most indicated for applications that demands high performance, with the shortest response time possible. It's an alternative to the use of the simple HTTP protocol, that however much it is used in most applications, it is not indicated for in real time applications, because the communication is synchronous, where the client must necessarily wait a response by the server, which makes the application quite costly, with less performance. In instant messaging applications like Whatsapp, Discord, Microsoft Team, among others, the communication is asynchronous, where the client does not necessarily need to wait the server response to keep sending messages. He can even send multiple messages without even receiving any response from the server or the other client. </p>
 
 ---
 
@@ -59,8 +59,8 @@
   <li>SQLite</li>
   <li>EJS (HTML Template Engine)</li>
   <li>Typescript</li>
-  <li>socket.io (Js lib to WebSocket connections)</li>
-  <li>Express.js (Microframework to routes management using HTTP protocol)</li>
+  <li>socket.io (Js lib for WebSocket connections)</li>
+  <li>Express.js (Microframework for routes management using HTTP protocol)</li>
 </ul>
 
 ---
@@ -73,13 +73,13 @@
 
 2- Open VS Code and open the folder ```NLW5``` as a root folder
 
-3- In the VS Code terminal, type ```npm i``` to install all of the dependencies to the projet
+3- From the VS Code terminal, type ```npm i``` to install all of the dependencies to the projet
 
 4- Execute ```npm run dev``` to start the server. If you've already had yarn installed, just type ```yarn dev```. In case of errors, problably is a port already busy by the other application. Then, change the port on line ```http.listen(3000, () => console.log("Loading..."));``` on ```server.ts```, changing 3000 to another number, and run the command again.
 
 5- Otherwise, from the address bar in your browser, type ```localhost:3000/pages/client``` to open the user's page and ```localhost:3000/pages/admin``` to open the admin's page (or attendant)
 
-6- To the user's connections be shown on the admin's page, is need to to send the first message clicking on ```Suporte``` button, fill e-mail and write some text. After that, clicking on ```Iniciar chat``` button will show the users in support list to be served, as shown in the images below:
+6- To the user's connections be shown on the admin's page, you need to send the first message clicking on ```Suporte``` button, fill e-mail and write some text. After that, clicking on ```Iniciar chat``` button will show the users in support list to be served, as shown in the images below:
 
 <img src="https://user-images.githubusercontent.com/35710766/116019748-46f94080-a61b-11eb-8307-324e2b808ac0.png" alt="Client chat image"/>
 <i>First user's message before to be served by attendant</i>
