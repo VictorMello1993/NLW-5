@@ -59,7 +59,7 @@
   <li>EJS (Template Engine do HTML)</li>
   <li>Typescript</li>
   <li>socket.io (Biblioteca js para conexão do WebSocket)</li>
-  <li>Express.js (Microframework para gerenciamento de rotas usando protocolo HTTP</li>
+  <li>Express.js (Microframework para gerenciamento de rotas usando protocolo HTTP)</li>
 </ul>
 
 ---
