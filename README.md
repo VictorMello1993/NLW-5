@@ -20,6 +20,7 @@
   <a href="#books-o-que-é-websocket">O que é WebSocket?</a> •  
   <a href="#wrench-recursos">Recursos</a> •
   <a href="#triangular_flag_on_postcomeçando">Começando</a>  
+  <a href="#melhorias">Melhorias</a>    
 </p>
 
 ---
