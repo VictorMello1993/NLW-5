@@ -12,3 +12,10 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
    <a href="https://github.com/VictorMello1993/NLW-5/stargazers"></a>
 </p>
+
+<p align="center">
+  <a href="#clapper-demo">Demo</a> •
+  <a href="#earth_americas-visão-geral">Visão geral</a> •
+  <a href="#wrench-recursos">Recursos</a> •
+  <a href="#triangular_flag_on_postcomeçando">Começando</a> •
+</p>
