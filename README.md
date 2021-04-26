@@ -62,6 +62,8 @@
   <li>Express.js (Microframework para gerenciamento de rotas usando protocolo HTTP</li>
 </ul>
 
+---
+
 <h2>:triangular_flag_on_post:Começando</h2>
 
 1 - Clone o repositório
@@ -84,10 +86,14 @@ git clone https://github.com/VictorMello1993/NLW-5.git
 
 </br>
 </br>
+</br>
+</br>
 
 <img src="https://user-images.githubusercontent.com/35710766/116020487-bb80af00-a61c-11eb-9475-684cd37f6012.png" align="center" alt="Lista de usuários na fila de atendimento"/>
 <i align="center"> Lista de usuários na fila de atendimento</i>
 
+</br>
+</br>
 </br>
 </br>
 
@@ -96,8 +102,11 @@ git clone https://github.com/VictorMello1993/NLW-5.git
 
 </br>
 </br>
+</br>
+</br>
 
 ---
+
 ## Melhorias
 - [ ] Incluir autenticação e autorização para perfis de usuário de cliente e usuário administrador com JWT
 
